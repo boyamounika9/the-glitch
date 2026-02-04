@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Flight</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+    <div class="overlay"></div>
+
+    <!-- Plane Image -->
+    <img src="plane.png" class="plane" alt="plane">
+
+    <div class="content">
+        <div class="icon">✈️</div>
+        <h1>Book Your Flight</h1>
+        <p>Discover amazing destinations with the best prices. Your adventure starts here.</p>
+
+        <div class="card">
+            <div class="row">
+                <div class="field">
+                    <label>From</label>
+                    <input type="text" placeholder="City or Airport">
+                </div>
+                <div class="field">
+                    <label>To</label>
+                    <input type="text" placeholder="City or Airport">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label>Departure Date</label>
+                    <input type="date">
+                </div>
+                <div class="field">
+                    <label>Return Date</label>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label>Passengers</label>
+                    <select>
+                        <option>1 Passenger</option>
+                        <option>2 Passengers</option>
+                        <option>3 Passengers</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Class</label>
+                    <select>
+                        <option>Economy</option>
+                        <option>Business</option>
+                        <option>First Class</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="btn">Search Flights</button>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
