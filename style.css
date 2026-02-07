@@ -248,3 +248,55 @@ select:focus {
     background-attachment: fixed;
     min-height: 100vh;
 } */
+
+
+/* ----contact page css--- */
+.contactus{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;  
+}
+.bgCU{
+     position: absolute;
+     z-index: 1;
+     color: gray;
+    /* filter: blur(3.3px) contrast(0); */
+}
+#CU{
+    font-size: 65px;
+    opacity: 0.1;
+}
+.WTBAP{
+    position: absolute;
+    z-index: 2;
+    font-size: 18px;
+    padding-top: 0%;
+    padding-bottom: 8px;
+    margin-top: 0%;
+    color: #002d5b;
+}
+.para{
+    margin-top: 300px;
+    text-align: center;
+    color:gray
+    
+}
+.btns{
+    display: flex;
+    gap:30px;
+}
+.btns button{
+    background-color: #c7dff6;
+    color: rgb(104, 104, 105);
+    border-radius: 20px;
+    padding: 10px;
+    padding-left:18px ;
+    padding-right: 18px;
+    border-color: #005fa3;
+}
+button:hover{
+    background-color: #002d5b;
+    color: #fff;
+}
