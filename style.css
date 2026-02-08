@@ -85,9 +85,11 @@ nav {
 .content{
     padding-top: 10px;
     padding-bottom: 20px;
+    
 }
 .content h1 {
     font-size: 71px;
+    color: #000000;
 }
 .content span {
     color: var(--main-color);
@@ -133,14 +135,6 @@ nav {
     height: calc(100vh - 100px);
 }
 
-/* .right-section {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden; 
-} */
 
 .right-section {
     width: 50%;
@@ -150,7 +144,7 @@ nav {
 
 .right-section img {
     position: absolute;
-    top: 35%;           /* ⬅️ moved up */
+    top: 35%;           
     left: 100%;
 
     width: 700px;
@@ -362,6 +356,7 @@ button:hover{
     background-color:#595f39;
     /* background-color: #002d5b; */
     color: #fff;
+
 }
 
 
@@ -434,3 +429,4 @@ button:hover{
   }
 }
 
+}
