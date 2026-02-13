@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="index-body">
+<body >
+  <section class="index-body">
     <header>
         <i class="fa-brands fa-skyatlas"></i>
         <div class="logo">Glitch Airline</div>
@@ -24,6 +25,7 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </header>
+    <div class="container">
 
     <main class="main-container">
         <section class="left-section">
@@ -40,6 +42,184 @@
         </section>
 
     </main>
+    </section>
+
+
+    <section id="booking" class="page booking">
+        <section class="hero">
+    <div class="overlay"></div>
+
+    <div class="content">
+        <div class="icon">✈️</div>
+        <h1>Book Your Flight</h1>
+        <p>Discover amazing destinations with the best prices. Your adventure starts here.</p>
+
+        <div class="card">
+            <div class="row">
+                <div class="field">
+                    <label>From</label>
+                    <input type="text" placeholder="City or Airport">
+                </div>
+                <div class="field">
+                    <label>To</label>
+                    <input type="text" placeholder="City or Airport">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label>Departure Date</label>
+                    <input type="date">
+                </div>
+                <div class="field">
+                    <label>Return Date</label>
+                    <input type="date">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label>Passengers</label>
+                    <select>
+                        <option>1 Passenger</option>
+                        <option>2 Passengers</option>
+                        <option>3 Passengers</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Class</label>
+                    <select>
+                        <option>Economy</option>
+                        <option>Business</option>
+                        <option>First Class</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="btn">Search Flights</button>
+        </div>
+    </div>
+</section>
+
+    </section>
+
+    <section id="simulation" class="page simulation">
+        
+    <section class="stats">
+  <div class="stat-box">
+    <i class="fa-solid fa-plane"></i>
+    <p>Delivering excellence in aviation training with decades of experience, preparing pilots and crew for safe and successful careers in the global aviation industry..</p>
+    <h3>SINCE 1994</h3>
+  </div>
+
+  <div class="stat-box">
+    <i class="fa-solid fa-user-graduate"></i>
+    <p>Training hundreds of aspiring pilots and aviation professionals every year through structured programs led by certified and experienced instructors.</p>
+    <h3>800 STUDENTS</h3>
+  </div>
+
+  <div class="stat-box">
+    <i class="fa-solid fa-road"></i>
+    <p>A modern training facility equipped with classrooms, briefing rooms, and technical infrastructure designed to support advanced aviation learning.</p>
+    <h3>15,400m²</h3>
+  </div>
+
+  <div class="stat-box">
+    <i class="fa-solid fa-plane-arrival"></i>
+    <p>State-of-the-art flight and cabin simulators that provide realistic, hands-on training aligned with international aviation standards.</p>
+    <h3>22 SIMULATORS</h3>
+  </div>
+</section>
+
+
+<section class="planer">
+  <h2 class="section-title">AIRCRAFTS</h2>
+  <h1 class="bg-text">TRAININGS</h1>
+
+  <!-- Radio buttons -->
+  <input type="radio" name="slider" id="slide1" checked>
+  <input type="radio" name="slider" id="slide2">
+  <input type="radio" name="slider" id="slide3">
+
+  <!-- Slider -->
+  <div class="slider">
+    <div class="slides">
+      <div class="slide">
+        <h1 class="slide-num">01</h1>
+        <img src="https://i.ibb.co/smLzbxM/plane1-min.png" alt="Aircraft 1">
+      </div>
+
+      <div class="slide">
+        <h1 class="slide-num">02</h1>
+        <img src="https://i.ibb.co/7ksNj4W/plane2-min.png" alt="Aircraft 2">
+      </div>
+
+      <div class="slide">
+        <h1 class="slide-num">03</h1>
+        <img src="https://i.ibb.co/qMrCgVh/plane3-min.png" alt="Aircraft 3">
+      </div>
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div class="dots">
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+  </div>
+</section>
+    </section>
+
+    <section id="howto" class="page howto">
+        <section class="howto-hero">
+    <h1>How To Book Your Flight</h1>
+    <p>Simple steps to reserve your seat and take-off with confidence.</p>
+</section>
+
+<section class="steps">
+
+    <div class="step-card">
+        <div class="number">01</div>
+        <h3>Search Flights</h3>
+        <p>Enter your departure city, destination, and travel dates to find available flights.</p>
+    </div>
+
+    <div class="step-card">
+        <div class="number">02</div>
+        <h3>Select Your Flight</h3>
+        <p>Compare flight timings, prices, and choose the best option for your journey.</p>
+    </div>
+
+    <div class="step-card">
+        <div class="number">03</div>
+        <h3>Enter Passenger Details</h3>
+        <p>Provide accurate traveler information to ensure a smooth booking experience.</p>
+    </div>
+
+    <div class="step-card">
+        <div class="number">04</div>
+        <h3>Make Payment</h3>
+        <p>Complete secure payment using your preferred method and receive confirmation.</p>
+    </div>
+
+</section>
+    </section>
+
+    <section id="contact" class="page contact">
+        <section class="contactus">
+    <div class="bgCU">
+      <h1 id="CU">CONTACT US</h1>
+    </div>
+    <div class="WTBAP">
+      <h2>WANT TO BECOME A PILOT?</h2>
+    </div>
+    <div class="para"><P>Becoming a pilot requires dedication, discipline, and a strong commitment to excellence. It is a career that demands precision, responsibility, and continuous learning. With the right guidance, training, and determination, aspiring pilots can transform their ambition into a respected and rewarding profession. Begin your journey today and take the first step toward a future in aviation.</P></div>
+    <div class="btns">
+      <button>Contact Us</button>
+      <button>Registration</button>
+    </div>
+  </section>
+    </section>
     <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-container">
@@ -98,6 +278,7 @@
     <span>Terms & Conditions</span>
   </div>
 </footer>
+</div>
 
 </body>
 </html>
