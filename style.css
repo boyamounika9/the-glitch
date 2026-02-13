@@ -569,3 +569,93 @@ input[type="radio"] {
 #slide3:checked ~ .dots label:nth-child(3) {
   background: darkolivegreen;
 }
+
+
+/*-- how to book--*/
+
+.howto-hero{
+    text-align:center;
+    padding:60px 20px;
+    animation:fadeIn 1s ease forwards;
+}
+
+.howto-hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.howto-hero p{
+    color:#666;
+    font-size:16px;
+}
+
+/* STEPS SECTION */
+
+.steps{
+    padding:60px 100px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:30px;
+}
+
+.step-card{
+    background:#fff;
+    padding:40px 30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    text-align:center;
+    transition:0.4s ease;
+    position:relative;
+    overflow:hidden;
+    animation:slideUp 0.8s ease forwards;
+}
+
+/* Hover Effect */
+
+.step-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Number Circle */
+
+.number{
+    width:60px;
+    height:60px;
+    background:#7c8f2b;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    margin:0 auto 20px;
+    transition:0.4s;
+}
+
+.step-card:hover .number{
+    background:#5f6f1f;
+    transform:scale(1.1);
+}
+
+.step-card h3{
+    margin-bottom:15px;
+}
+
+.step-card p{
+    color:#666;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* Animations */
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(-20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes slideUp{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
