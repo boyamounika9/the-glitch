@@ -429,4 +429,143 @@ button:hover{
   }
 }
 
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.stat-box {
+  width: 220px;
+}
+
+.stat-box i {
+  font-size: 48px;
+  color: darkolivegreen;
+  margin-bottom: 20px;
+}
+
+.stat-box p {
+  font-size: 14px;
+  color: #9a9a9a;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.stat-box h3 {
+  font-size: 16px;
+  color: darkolivegreen;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.planer {
+  position: relative;
+  background: #ffffff;
+  padding: 100px 0 80px;
+  text-align: center;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Top title */
+.section-title {
+  font-size:35px;
+  letter-spacing: 2px;
+  color: darkolivegreen;
+  margin-bottom: 60px;
+  font-weight: 700;
+  z-index: 3;
+  position: relative;
+}
+
+/* Background TRAININGS text */
+.bg-text {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: rgba(0, 0, 0, 0.04);
+  z-index: 1;
+  pointer-events: none;
+ 
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Slide */
+.slide {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Big slide number */
+.slide-num {
+  position: absolute;
+  top: -120px;
+  font-size: 220px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.05);
+  z-index: 2;
+  padding-top: 80px;
+}
+
+/* Plane image */
+.slide img {
+  width: 100%;
+  max-width: 750px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Slide movement */
+#slide1:checked ~ .slider .slides { transform: translateX(0%); }
+#slide2:checked ~ .slider .slides { transform: translateX(-33%); }
+#slide3:checked ~ .slider .slides { transform: translateX(-66%); }
+
+/* Dots */
+.dots {
+  margin-top: 40px;
+  position: relative;
+  z-index: 3;
+}
+
+.dots label {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+#slide1:checked ~ .dots label:nth-child(1),
+#slide2:checked ~ .dots label:nth-child(2),
+#slide3:checked ~ .dots label:nth-child(3) {
+  background: darkolivegreen;
 }
